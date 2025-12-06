@@ -3,7 +3,7 @@ using Algorithm.Common.Model;
 
 namespace Algorithm.Common.ML {
     public interface ICustomMlContext {
-        bool DetectAnomaliesBychangePoint(IList<WeatherDataResult> dataFromDatabase, string modelPath);
-        bool DetectAnomaliesBySpike(IList<WeatherDataResult> dataFromDatabase, string modelPath);
+        bool DetectAnomaliesBychangePoint(IList<RTGFileDetails> dataFromDatabase, string modelPath);
+        bool DetectAnomaliesBySpike(IList<RTGFileDetails> dataFromDatabase, string modelPath);
     }
 }

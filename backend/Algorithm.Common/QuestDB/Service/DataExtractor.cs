@@ -14,7 +14,7 @@ namespace Algorithms.Common.QuestDB.Service {
 
             return count.Count;
         }
-        public async Task<IEnumerable<WeatherDataResult>> GetData(string sessionId, int pageIndex, int pageSize, string endpoint = "http://127.0.0.1") {
+        public async Task<IEnumerable<RTGFileDetails>> GetData(string sessionId, int pageIndex, int pageSize, string endpoint = "http://127.0.0.1") {
 
             try {
                 var questDbClient = new QuestDBClient(endpoint);
@@ -25,7 +25,7 @@ namespace Algorithms.Common.QuestDB.Service {
                 };
                 var query = BuildQuery(request, sessionId);
                 var queryApi = questDbClient.GetQueryApi();
-                var dataModel = await queryApi.QueryEnumerableAsync<WeatherDataResult>(query);
+                var dataModel = await queryApi.QueryEnumerableAsync<RTGFileDetails>(query);
 
                 return dataModel;
             }catch(Exception ex) {
@@ -35,7 +35,7 @@ namespace Algorithms.Common.QuestDB.Service {
             return null;
         }
 
-        public async Task<IEnumerable<WeatherDataResult>> GetDataAsList(string sessionId, int pageIndex, int pageSize, string endpoint = "http://127.0.0.1") {
+        public async Task<IEnumerable<RTGFileDetails>> GetDataAsList(string sessionId, int pageIndex, int pageSize, string endpoint = "http://127.0.0.1") {
             var questDbClient = new QuestDBClient(endpoint);
 
             var request = new PaginationRequest() {
@@ -44,7 +44,7 @@ namespace Algorithms.Common.QuestDB.Service {
             };
             var query = BuildQuery(request, sessionId);
             var queryApi = questDbClient.GetQueryApi();
-            var dataModel = await queryApi.QueryEnumerableAsync<WeatherDataResult>(query);
+            var dataModel = await queryApi.QueryEnumerableAsync<RTGFileDetails>(query);
 
             return dataModel;
         }

@@ -13,7 +13,7 @@ namespace Algorithm.E.WorkerService.Service {
             this.modelName = modelName;
         }
 
-        public async Task<bool> FindAnomalies(IEnumerable<WeatherDataResult> input) {
+        public async Task<bool> FindAnomalies(IEnumerable<RTGFileDetails> input) {
             var convertedFile = ImageConverter.LoadBmpAsFloatArray(input.First().FilePath);
             var prompt = "Poszukaj anomalii w poniższych danych:\n" + convertedFile
                 + "\n jeśli znajdziesz anomalię to zwróć 1 w przeciwnym razie zwróć 0. "

@@ -2,6 +2,6 @@
 
 namespace Algorithm.E.WorkerService.Service {
     public interface IGeminiAgentService {
-        Task<bool> FindAnomalies(IEnumerable<WeatherDataResult> input);
+        Task<bool> FindAnomalies(IEnumerable<RTGFileDetails> input);
     }
 }

@@ -19,12 +19,5 @@ W ramach backendu powinno się uruchomić 5 workerów oraz jeden serwer API pod 
 Baza danych powinna zostać wypełniona danymi początkowymi.
 
 ## Opcjonalne funkcje aplikacyjne do wykonania
-
-https://ai.google.dev/gemini-api/docs/models#experimental
-
-https://blog.elmah.io/find-anomalies-with-spike-detection-and-ml-net/
-
-https://github.com/IsNemoEqualTrue/monitor-table-change-with-sqltabledependency
-https://learn.microsoft.com/en-us/aspnet/core/fundamentals/host/hosted-services?view=aspnetcore-10.0&tabs=visual-studio
-
-https://libraries.io/nuget/SqlTableDependency
+Dodac anulowanie zadań po określonym czasie oczekiwania.
+Gemini chyba nie wspiera tego rozwiązania.

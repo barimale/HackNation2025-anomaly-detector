@@ -1,7 +1,7 @@
 ﻿using Microsoft.ML.Data;
 
 namespace Algorithm.Common.Model {
-    public class WeatherDataResult {
+    public class RTGFileDetails {
         [LoadColumn(0)]
         public required string SessionId { get; init; }
         [LoadColumn(1)]

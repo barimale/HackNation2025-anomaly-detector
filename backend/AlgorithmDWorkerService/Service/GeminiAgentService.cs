@@ -11,7 +11,7 @@ namespace Algorithm.D.WorkerService.Service {
             this.modelName = modelName; // Model.Gemini25FlashLite;
         }
 
-        public async Task<bool> FindAnomalies(IEnumerable<WeatherDataResult> input) {
+        public async Task<bool> FindAnomalies(IEnumerable<RTGFileDetails> input) {
             var file = File.ReadAllText(input.First().FilePath);
             //var convertedFile = ImageConverter.LoadBmpAsFloatArray(input.First().FilePath);
             var prompt = "Poszukaj anomalii w poniższych danych:\n" + file
