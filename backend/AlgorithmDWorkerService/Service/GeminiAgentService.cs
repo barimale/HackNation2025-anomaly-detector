@@ -8,11 +8,11 @@ namespace Algorithm.D.WorkerService.Service {
         private readonly string modelName;
         public GeminiAgentService(string apiKey, string modelName) {
             this.apiKey = apiKey;
-            this.modelName = modelName; // Model.Gemini25FlashLite;
+            this.modelName = modelName;
         }
 
         public async Task<bool> FindAnomalies(IEnumerable<RTGFileDetails> input) {
-            var file = File.ReadAllText(input.First().FilePath);
+            var file = File.ReadAllText(input.First().FilePath); // WIP lub ponizsza linia zamiast tej 
             //var convertedFile = ImageConverter.LoadBmpAsFloatArray(input.First().FilePath);
             var prompt = "Poszukaj anomalii w poniższych danych:\n" + file
                 + "\n jeśli znajdziesz anomalię to zwróć 1 w przeciwnym razie zwróć 0. "
@@ -21,7 +21,7 @@ namespace Algorithm.D.WorkerService.Service {
             var googleAI = new GoogleAI(apiKey: apiKey);
             var model = googleAI.GenerativeModel(model: modelName);
             var response = await model.GenerateContent(prompt);
-            var result = long.Parse(response.Text);
+            var result = long.Parse(response.Text); // WIP obsluzyc jsona 
             return result == 1;
         }
     }
