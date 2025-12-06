@@ -1,17 +1,17 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Modal from "../organisms/Modal";
+import Modal from "../Organisms/Modal";
 import {useEffect, useState }from "react"
-import FilesUpload from "../organisms/FilesUpload";
+import FilesUpload from "../Organisms/FilesUpload";
 import { HubConnectionBuilder, LogLevel, IHttpConnectionOptions, HttpTransportType } from '@microsoft/signalr';
 import OverallResult from "../../types/overall-result";
 import { Guid } from "guid-typescript";
 import { Tooltip } from 'react-tooltip'
-import PieChartWithCustomizedLabel, { Data } from '../molecules/TooltipContent';
-import LoadingCircle from "../atoms/LoadingCircle";
+import PieChartWithCustomizedLabel, { Data } from '../Molecules/TooltipContent';
+import LoadingCircle from "../Atoms/LoadingCircle";
 import axios from "axios";
 import Ranking from "../../types/ranking";
-import MessageBox from "../molecules/MessageBox";
+import MessageBox from "../Molecules/MessageBox";
 import {RefreshIcon} from '@sanity/icons'
 import {OlistIcon} from '@sanity/icons'
 import {BarChartIcon} from '@sanity/icons'
