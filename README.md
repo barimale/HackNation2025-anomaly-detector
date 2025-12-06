@@ -22,10 +22,14 @@ Baza danych powinna zostać wypełniona danymi początkowymi.
 Dodac anulowanie zadań po określonym czasie oczekiwania.
 Gemini chyba nie wspiera tego rozwiązania.
 ### Zamiana coin flipów na prawdziwe modele
-Zamienić coin flipi na prawdziwe modele.
+Zamienić coin flipy na prawdziwe modele.
 ### Anulowanie
 Przeniesc rozwiązanie z sqlite na mssql.
 Zainstalowac SqlTableDependency.
 Dodac status.
 Gdy status rozwiazania ustawiony na CANCELLED zatrzymac procesowanie workera - ustawic status STOPPED.
 Dla normalnego wykonania pracy workera ustawic status COMPLETED.
+### Dashboard	
+Wykonac osobna aplikacje w formie dashboarda 
+do wyswietlania anomalii - przekazac w URL sessionId.
+
