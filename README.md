@@ -21,3 +21,4 @@ Baza danych powinna zostać wypełniona danymi początkowymi.
 ## Opcjonalne funkcje aplikacyjne do wykonania
 Dodac anulowanie zadań po określonym czasie oczekiwania.
 Gemini chyba nie wspiera tego rozwiązania.
+Potrzebna refaktoryzacja calosci - wiele linii kodu pochodzi z innej wersji aplikacji do obslugi csv.

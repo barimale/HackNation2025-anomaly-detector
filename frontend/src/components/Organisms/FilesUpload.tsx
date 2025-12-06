@@ -112,7 +112,7 @@ const FilesUpload: React.FC<FilesUploadProps> = (props : FilesUploadProps) => {
             <label htmlFor="file-upload" style={{padding: '5px',paddingLeft: '10px', paddingRight: '10px', color: 'white', cursor: 'pointer',backgroundColor: 'transparent', border: '1px solid white', borderRadius: '3px'}}>
               <AddDocumentIcon /> Wczytaj plik
             </label>
-            <input id="file-upload" style={{display: 'none'}} type="file" multiple onChange={selectFiles} />
+            <input id="file-upload" style={{display: 'none'}} type="file" onChange={selectFiles} />
           </label>
         </div>
         <div className="col-3">
