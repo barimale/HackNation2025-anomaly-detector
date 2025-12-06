@@ -12,7 +12,6 @@ namespace UploadStreamToQuestDB.Application {
         private readonly IExtensionHandler extensionHandler;
         private readonly IAntivirusHandler antivirusHandler;
         private readonly IDataIngestionerHandler dataIngestionerHandler;
-        private readonly IDiskCleanUpHandler diskCleanUpHandler;
         private readonly ILogger<UploadPipeline> logger;
 
         /// <summary>
@@ -22,19 +21,16 @@ namespace UploadStreamToQuestDB.Application {
         /// <param name="extensionHandler">The extension handler.</param>
         /// <param name="antivirusHandler">The antivirus handler.</param>
         /// <param name="dataIngestionerHandler">The data ingestion handler.</param>
-        /// <param name="diskCleanUpHandler">The disk cleanup handler.</param>
         /// <param name="logger">The logger.</param>
         public UploadPipeline(IUploadHandler uploadHandler,
             IExtensionHandler extensionHandler,
             IAntivirusHandler antivirusHandler,
             IDataIngestionerHandler dataIngestionerHandler,
-            IDiskCleanUpHandler diskCleanUpHandler,
             ILogger<UploadPipeline> logger) {
             this.uploadHandler = uploadHandler;
             this.extensionHandler = extensionHandler;
             this.antivirusHandler = antivirusHandler;
             this.dataIngestionerHandler = dataIngestionerHandler;
-            this.diskCleanUpHandler = diskCleanUpHandler;
             this.logger = logger;
         }
 
@@ -50,7 +46,6 @@ namespace UploadStreamToQuestDB.Application {
                .SetNext(extensionHandler)
                .SetNext(antivirusHandler)
                .SetNext(dataIngestionerHandler);
-               //.SetNext(diskCleanUpHandler);
             logger.LogTrace("Pipeline configuration is ended.");
         }
 
