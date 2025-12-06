@@ -21,4 +21,11 @@ Baza danych powinna zostać wypełniona danymi początkowymi.
 ## Opcjonalne funkcje aplikacyjne do wykonania
 Dodac anulowanie zadań po określonym czasie oczekiwania.
 Gemini chyba nie wspiera tego rozwiązania.
-Potrzebna refaktoryzacja calosci - wiele linii kodu pochodzi z innej wersji aplikacji do obslugi csv.
+### Zamiana coin flipów na prawdziwe modele
+Zamienić coin flipi na prawdziwe modele.
+### Anulowanie
+Przeniesc rozwiązanie z sqlite na mssql.
+Zainstalowac SqlTableDependency.
+Dodac status.
+Gdy status rozwiazania ustawiony na CANCELLED zatrzymac procesowanie workera - ustawic status STOPPED.
+Dla normalnego wykonania pracy workera ustawic status COMPLETED.
