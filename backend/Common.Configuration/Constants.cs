@@ -1,7 +1,7 @@
 ﻿namespace Configuration.Common {
     public static class Constants {
-        public const int PageSize = 1000;
-        public const int AlgorithmsCount = 3;
+        public const int PageSize = 5;
+        public const int AlgorithmsCount = 3; // ustawic na 5 jesli gemini pro i flash lite tez brane pod uwage 
 
         public const string AGENT_NAME_A = "coin-flip-agentA";
         public const string AGENT_NAME_B = "coin-flip-agentB";
