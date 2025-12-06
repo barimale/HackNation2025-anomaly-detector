@@ -35,15 +35,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.C.WorkerService",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Common", "Algorithm.Common\Algorithms.Common.csproj", "{9279204E-18D0-42F1-9892-06F8CC3A647F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.UTs", "Common.UTs\Common.UTs.csproj", "{085E3B5A-34A8-4C9E-9531-8A2ECECAAB9D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.D.WorkerService", "AlgorithmDWorkerService\Algorithm.D.WorkerService.csproj", "{A2946E19-FA8A-3FEA-E41F-367A4B1883D2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.E.WorkerService", "AlgorithmEWorkerService\Algorithm.E.WorkerService.csproj", "{31EA5885-A2E8-96A8-7187-A49B8113C302}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configuration.Common", "Common.Configuration\Configuration.Common.csproj", "{F477E99A-F129-4851-9682-6BC34951757B}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UTs", "UTs", "{AE91227C-C531-4E41-A67B-10C653864D4C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.A.WorkerService", "AlgorithmAWorkerService\Algorithm.A.WorkerService.csproj", "{C928A7E8-9B1C-701B-ABA0-3F2793E72175}"
 EndProject
@@ -167,18 +163,6 @@ Global
 		{9279204E-18D0-42F1-9892-06F8CC3A647F}.Release|x64.Build.0 = Release|Any CPU
 		{9279204E-18D0-42F1-9892-06F8CC3A647F}.Release|x86.ActiveCfg = Release|Any CPU
 		{9279204E-18D0-42F1-9892-06F8CC3A647F}.Release|x86.Build.0 = Release|Any CPU
-		{085E3B5A-34A8-4C9E-9531-8A2ECECAAB9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{085E3B5A-34A8-4C9E-9531-8A2ECECAAB9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{085E3B5A-34A8-4C9E-9531-8A2ECECAAB9D}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{085E3B5A-34A8-4C9E-9531-8A2ECECAAB9D}.Debug|x64.Build.0 = Debug|Any CPU
-		{085E3B5A-34A8-4C9E-9531-8A2ECECAAB9D}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{085E3B5A-34A8-4C9E-9531-8A2ECECAAB9D}.Debug|x86.Build.0 = Debug|Any CPU
-		{085E3B5A-34A8-4C9E-9531-8A2ECECAAB9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{085E3B5A-34A8-4C9E-9531-8A2ECECAAB9D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{085E3B5A-34A8-4C9E-9531-8A2ECECAAB9D}.Release|x64.ActiveCfg = Release|Any CPU
-		{085E3B5A-34A8-4C9E-9531-8A2ECECAAB9D}.Release|x64.Build.0 = Release|Any CPU
-		{085E3B5A-34A8-4C9E-9531-8A2ECECAAB9D}.Release|x86.ActiveCfg = Release|Any CPU
-		{085E3B5A-34A8-4C9E-9531-8A2ECECAAB9D}.Release|x86.Build.0 = Release|Any CPU
 		{A2946E19-FA8A-3FEA-E41F-367A4B1883D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A2946E19-FA8A-3FEA-E41F-367A4B1883D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2946E19-FA8A-3FEA-E41F-367A4B1883D2}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -242,9 +226,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{085E3B5A-34A8-4C9E-9531-8A2ECECAAB9D} = {AE91227C-C531-4E41-A67B-10C653864D4C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {79B2131E-3E25-4AEE-ADD1-33440F469E49}

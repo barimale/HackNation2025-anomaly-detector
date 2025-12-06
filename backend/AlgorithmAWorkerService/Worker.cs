@@ -27,8 +27,6 @@ namespace Algorithm.A.WorkerService {
         }
 
         protected override async Task ExecuteAsync(CancellationToken cancellationToken) {
-            _logger.LogInformation("Neural Network Hosted Service running.");
-
             AsyncEventHandler<BasicDeliverEventArgs> bo = async (model, ea) =>
             {
                 var body = ea.Body.ToArray();

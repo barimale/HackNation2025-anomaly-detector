@@ -4,10 +4,8 @@
 - Visual Studio 2022 lub nowszy
 - Podman Desktop
 
-## Konfiguracja środowiska
-Stwórz szkielet katalogów z wykorzystaniem testu jednostkowego 'Create_folders()'.
-
-Stwórz modele ML.NET z wykorzystaniem testu jednostkowego 'Create_ML_models()'.
+## Konfiguracja solucji
+Wybierz multiple startup projects w Visual Studio dla solucji.
 ## Uruchomienie - warunki wstępne
 Utwórz kontenery zgodnie z definicjami umieszczonymi w PODMAN.md.
 ## Uruchomienie aplikacji
