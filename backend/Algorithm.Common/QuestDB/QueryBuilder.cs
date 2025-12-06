@@ -7,7 +7,7 @@ namespace UploadStreamToQuestDB.Infrastructure.Utilities {
     /// </summary>
     public class QueryBuilder {
         private const string start =
-            "select StationId,QN,PP_10,TT_10,TM5_10,RF_10,TD_10,timestamp from ";
+            "select SessionId, FilePath from ";
 
         private int? PageIndex;
         private int? PageCount;

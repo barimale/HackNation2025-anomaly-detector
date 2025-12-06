@@ -7,6 +7,6 @@ namespace UploadStreamToQuestDB.Infrastructure.Services {
         /// </summary>
         /// <param name="file">The CSV file containing weather data.</param>
         /// <param name="sessionId">The session ID for the name of the table.</param>
-        void Execute(CsvFile<WeatherGermany> file, string sessionId);
+        void Execute(string filePath, string sessionId);
     }
 }

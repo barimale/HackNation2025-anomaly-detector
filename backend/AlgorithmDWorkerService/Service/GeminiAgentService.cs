@@ -1,4 +1,6 @@
-﻿using Mscc.GenerativeAI;
+﻿using Algorithm.Common.Model;
+using Algorithms.Common;
+using Mscc.GenerativeAI;
 
 namespace Algorithm.D.WorkerService.Service {
     public class GeminiAgentService : IGeminiAgentService {
@@ -9,10 +11,13 @@ namespace Algorithm.D.WorkerService.Service {
             this.modelName = modelName; // Model.Gemini25FlashLite;
         }
 
-        public async Task<bool> FindAnomalies(string data) {
-            var prompt = "Poszukaj anomalii w poniższych danych:\n" + data
-                + "\n jeśli znajdziesz anomalię to zwróć 1 bez wyjaśnienia w przeciwnym razie zwróć 0 bez wyjaśnienia"
-                + "Zwróć tylko jedną liczbę.";
+        public async Task<bool> FindAnomalies(IEnumerable<WeatherDataResult> input) {
+            var file = File.ReadAllText(input.First().FilePath);
+            //var convertedFile = ImageConverter.LoadBmpAsFloatArray(input.First().FilePath);
+            var prompt = "Poszukaj anomalii w poniższych danych:\n" + file
+                + "\n jeśli znajdziesz anomalię to zwróć 1 w przeciwnym razie zwróć 0. "
+                + "Zwróć tylko jedną liczbę oraz współrzędne prostokąta w którym znajduje się anomalia"
+                + "w formacie json";
             var googleAI = new GoogleAI(apiKey: apiKey);
             var model = googleAI.GenerativeModel(model: modelName);
             var response = await model.GenerateContent(prompt);

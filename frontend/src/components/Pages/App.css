@@ -39,7 +39,7 @@
 }
 
 input[type="file"]::file-selector-button {
-  content: "Wybierz pliki";
+  content: "Wybierz plik";
   content-visibility: visible;
   cursor: pointer;
 }

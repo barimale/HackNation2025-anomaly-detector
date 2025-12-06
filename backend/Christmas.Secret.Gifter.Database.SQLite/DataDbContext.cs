@@ -25,8 +25,8 @@ namespace MSSql.Infrastructure {
 
             // Seed data
             modelBuilder.Entity<RankingEntry>().HasData(
-                new RankingEntry { Id = Guid.NewGuid().ToString(), AlgorithmId = Configuration.Common.Constants.AGENT_NAME_A, Score = 1},
-                new RankingEntry { Id = Guid.NewGuid().ToString(), AlgorithmId = Configuration.Common.Constants.AGENT_NAME_B, Score = 1},
+                //new RankingEntry { Id = Guid.NewGuid().ToString(), AlgorithmId = Configuration.Common.Constants.AGENT_NAME_A, Score = 1},
+                //new RankingEntry { Id = Guid.NewGuid().ToString(), AlgorithmId = Configuration.Common.Constants.AGENT_NAME_B, Score = 1},
                 new RankingEntry { Id = Guid.NewGuid().ToString(), AlgorithmId = Configuration.Common.Constants.AGENT_NAME_C, Score = 1 },
                 new RankingEntry { Id = Guid.NewGuid().ToString(), AlgorithmId = Configuration.Common.Constants.AGENT_NAME_D, Score = 1 },
                 new RankingEntry { Id = Guid.NewGuid().ToString(), AlgorithmId = Configuration.Common.Constants.AGENT_NAME_E, Score = 1 }

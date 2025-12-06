@@ -33,33 +33,7 @@ namespace UploadStreamToQuestDB.Application.Handlers {
 
         private void Execute(FileModelsInput files, FileModel file) {
             try {
-                var entry = new CsvFile<WeatherGermany>();
-                var config = new CsvConfiguration(CultureInfo.InvariantCulture) {
-                    Delimiter = ";",
-                    Comment = '%',
-                    Encoding = Encoding.UTF8,
-                    HasHeaderRecord = true,
-                    BadDataFound = context =>
-                    {
-                        _logger.LogError($"Bad data found on row {context.RawRecord}: {context.RawRecord}");
-                    },
-                    MissingFieldFound = (context) =>
-                    {
-                        _logger.LogError($"Field missing at index {context.Index}: {context.HeaderNames}");
-                    },
-                    ReadingExceptionOccurred = ex =>
-                    {
-                        _logger.LogError($"An error occurred while reading the CSV file: {ex.Exception.Message}");
-                        return false;
-                    }
-                };
-
-                using (var reader = new StreamReader(file.FilePath))
-                using (var csv = new CsvReader(reader, config)) {
-                    entry.Records.AddRange(csv.GetRecords<WeatherGermany>().AsEnumerable());
-                }
-
-                _queryIngestionerService.Execute(entry, files.SessionId);
+                _queryIngestionerService.Execute(file.FilePath, files.SessionId);
 
                 file.State.Add(FileModelState.INGESTION_READY);
             } catch (Exception ex) {

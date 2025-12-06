@@ -49,8 +49,8 @@ namespace UploadStreamToQuestDB.Application {
             uploadHandler
                .SetNext(extensionHandler)
                .SetNext(antivirusHandler)
-               .SetNext(dataIngestionerHandler)
-               .SetNext(diskCleanUpHandler);
+               .SetNext(dataIngestionerHandler);
+               //.SetNext(diskCleanUpHandler);
             logger.LogTrace("Pipeline configuration is ended.");
         }
 

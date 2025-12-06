@@ -6,7 +6,7 @@ using UploadStreamToQuestDB.Infrastructure.Utilities;
 
 namespace Algorithms.Common.QuestDB.Service {
     public class DataExtractor {
-        private const string GetCountQuery = "SELECT StationId FROM ";
+        private const string GetCountQuery = "SELECT SessionId FROM ";
         public async Task<long> GetCount(string sessionId, string endpoint = "http://127.0.0.1") {
             var questDbClient = new QuestDBClient(endpoint);
             var queryApi = questDbClient.GetQueryApi();
@@ -14,19 +14,25 @@ namespace Algorithms.Common.QuestDB.Service {
 
             return count.Count;
         }
-        public async Task<string> GetData(string sessionId, int pageIndex, int pageSize, string endpoint = "http://127.0.0.1") {
-            var questDbClient = new QuestDBClient(endpoint);
+        public async Task<IEnumerable<WeatherDataResult>> GetData(string sessionId, int pageIndex, int pageSize, string endpoint = "http://127.0.0.1") {
 
-            var request = new PaginationRequest() {
-                PageIndex = pageIndex,
-                PageSize = pageSize
-            };
-            var query = BuildQuery(request, sessionId);
-            var queryApi = questDbClient.GetQueryApi();
-            var dataModel = await queryApi.QueryEnumerableAsync<WeatherDataResult>(query);
-            var requestJson = JsonSerializer.Serialize(dataModel);
+            try {
+                var questDbClient = new QuestDBClient(endpoint);
 
-            return requestJson;
+                var request = new PaginationRequest() {
+                    PageIndex = pageIndex,
+                    PageSize = pageSize
+                };
+                var query = BuildQuery(request, sessionId);
+                var queryApi = questDbClient.GetQueryApi();
+                var dataModel = await queryApi.QueryEnumerableAsync<WeatherDataResult>(query);
+
+                return dataModel;
+            }catch(Exception ex) {
+                Console.WriteLine(ex.Message);
+            }
+
+            return null;
         }
 
         public async Task<IEnumerable<WeatherDataResult>> GetDataAsList(string sessionId, int pageIndex, int pageSize, string endpoint = "http://127.0.0.1") {

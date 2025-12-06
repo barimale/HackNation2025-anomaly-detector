@@ -25,15 +25,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo Data", "Demo Data", "{
 		produkt_zehn_min_tu_19930428_19991231_00003.txt = produkt_zehn_min_tu_19930428_19991231_00003.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.A.WorkerService", "AlgorithmWorkerService\Algorithm.A.WorkerService.csproj", "{A73D086F-02E7-4D4F-958C-24D1600175FE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSSql.Domain", "Christmas.Secret.Gifter.Domain\MSSql.Domain.csproj", "{25D4EE1A-1A82-E95A-ABAA-54E878193CAD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSSql.Infrastructure", "Christmas.Secret.Gifter.Database.SQLite\MSSql.Infrastructure.csproj", "{198CD814-7EEC-EFFB-1220-1D048297AC98}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.RabbitMQ", "Common.RabbitMQ\Common.RabbitMQ.csproj", "{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.B.WorkerService", "AlgorithmBWorkerService\Algorithm.B.WorkerService.csproj", "{DE056F11-C85B-3477-8FE4-6482FE6A380D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.C.WorkerService", "AlgorithmCWorkerService\Algorithm.C.WorkerService.csproj", "{234090DB-0EBF-1713-8697-378DA4706552}"
 EndProject
@@ -107,18 +103,6 @@ Global
 		{187C7EB1-1936-4E34-A0F6-7D974B39BE47}.Release|x64.Build.0 = Release|Any CPU
 		{187C7EB1-1936-4E34-A0F6-7D974B39BE47}.Release|x86.ActiveCfg = Release|Any CPU
 		{187C7EB1-1936-4E34-A0F6-7D974B39BE47}.Release|x86.Build.0 = Release|Any CPU
-		{A73D086F-02E7-4D4F-958C-24D1600175FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A73D086F-02E7-4D4F-958C-24D1600175FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A73D086F-02E7-4D4F-958C-24D1600175FE}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{A73D086F-02E7-4D4F-958C-24D1600175FE}.Debug|x64.Build.0 = Debug|Any CPU
-		{A73D086F-02E7-4D4F-958C-24D1600175FE}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{A73D086F-02E7-4D4F-958C-24D1600175FE}.Debug|x86.Build.0 = Debug|Any CPU
-		{A73D086F-02E7-4D4F-958C-24D1600175FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A73D086F-02E7-4D4F-958C-24D1600175FE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A73D086F-02E7-4D4F-958C-24D1600175FE}.Release|x64.ActiveCfg = Release|Any CPU
-		{A73D086F-02E7-4D4F-958C-24D1600175FE}.Release|x64.Build.0 = Release|Any CPU
-		{A73D086F-02E7-4D4F-958C-24D1600175FE}.Release|x86.ActiveCfg = Release|Any CPU
-		{A73D086F-02E7-4D4F-958C-24D1600175FE}.Release|x86.Build.0 = Release|Any CPU
 		{25D4EE1A-1A82-E95A-ABAA-54E878193CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{25D4EE1A-1A82-E95A-ABAA-54E878193CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25D4EE1A-1A82-E95A-ABAA-54E878193CAD}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -155,18 +139,6 @@ Global
 		{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}.Release|x64.Build.0 = Release|Any CPU
 		{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}.Release|x86.ActiveCfg = Release|Any CPU
 		{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}.Release|x86.Build.0 = Release|Any CPU
-		{DE056F11-C85B-3477-8FE4-6482FE6A380D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DE056F11-C85B-3477-8FE4-6482FE6A380D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DE056F11-C85B-3477-8FE4-6482FE6A380D}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{DE056F11-C85B-3477-8FE4-6482FE6A380D}.Debug|x64.Build.0 = Debug|Any CPU
-		{DE056F11-C85B-3477-8FE4-6482FE6A380D}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{DE056F11-C85B-3477-8FE4-6482FE6A380D}.Debug|x86.Build.0 = Debug|Any CPU
-		{DE056F11-C85B-3477-8FE4-6482FE6A380D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DE056F11-C85B-3477-8FE4-6482FE6A380D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DE056F11-C85B-3477-8FE4-6482FE6A380D}.Release|x64.ActiveCfg = Release|Any CPU
-		{DE056F11-C85B-3477-8FE4-6482FE6A380D}.Release|x64.Build.0 = Release|Any CPU
-		{DE056F11-C85B-3477-8FE4-6482FE6A380D}.Release|x86.ActiveCfg = Release|Any CPU
-		{DE056F11-C85B-3477-8FE4-6482FE6A380D}.Release|x86.Build.0 = Release|Any CPU
 		{234090DB-0EBF-1713-8697-378DA4706552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{234090DB-0EBF-1713-8697-378DA4706552}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{234090DB-0EBF-1713-8697-378DA4706552}.Debug|x64.ActiveCfg = Debug|Any CPU

@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+﻿using Algorithm.Common.Model;
+using Algorithms.Common;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Mscc.GenerativeAI;
 
 namespace Algorithm.E.WorkerService.Service {
@@ -11,10 +13,12 @@ namespace Algorithm.E.WorkerService.Service {
             this.modelName = modelName;
         }
 
-        public async Task<bool> FindAnomalies(string data) {
-            var prompt = "Poszukaj anomalii w poniższych danych:\n" + data
+        public async Task<bool> FindAnomalies(IEnumerable<WeatherDataResult> input) {
+            var convertedFile = ImageConverter.LoadBmpAsFloatArray(input.First().FilePath);
+            var prompt = "Poszukaj anomalii w poniższych danych:\n" + convertedFile
                 + "\n jeśli znajdziesz anomalię to zwróć 1 w przeciwnym razie zwróć 0. "
-                + "Zwróć tylko jedną liczbę.";
+                + "Zwróć tylko jedną liczbę oraz współrzędne prostokąta w którym znajduje się anomalia"
+                + "w formacie json";
             var googleAI = new GoogleAI(apiKey: apiKey);
             var model = googleAI.GenerativeModel(model: modelName);
             var response = await model.GenerateContent(prompt);

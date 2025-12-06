@@ -10,10 +10,9 @@ namespace UploadStreamToQuestDB.Domain.Utilities {
         /// </summary>
         /// <param name="input">The date string in "yyyyMMddHHmm" format.</param>
         /// <returns>The parsed <see cref="DateTime"/> object.</returns>
-        public static DateTime yyyyMMddHHmmToDate(string input) {
-            DateTime parsedDate = DateTime.ParseExact(input,
-                                  "yyyyMMddHHmm",
-                                  CultureInfo.InvariantCulture);
+        public static DateTime yyyyMMddHHmmToDate(DateTime input) {
+            string formatted = input.ToString("yyyyMMddHHmm");
+            DateTime parsedDate = DateTime.ParseExact(formatted, "yyyyMMddHHmm", null);
             return parsedDate;
         }
 

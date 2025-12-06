@@ -42,32 +42,32 @@ namespace Common.UTs {
         [Fact]
         public void Create_models() {
             //given
-            mlContext = new MLContext();
+            //mlContext = new MLContext();
 
-            // Assign the Number of records in dataset file to constant variable.
-            const int size = 36;
+            //// Assign the Number of records in dataset file to constant variable.
+            //const int size = 36;
 
-            // Load the data into IDataView.
-            // This dataset is used for detecting spikes or changes not for training.
-            IDataView dataView = mlContext.Data.LoadFromTextFile<WeatherDataResult>(
-                path: GetAbsolutePath(FolderStructure.DatasetRelativePath),
-                hasHeader: true,
-                separatorChar: ',');
+            //// Load the data into IDataView.
+            //// This dataset is used for detecting spikes or changes not for training.
+            //IDataView dataView = mlContext.Data.LoadFromTextFile<WeatherDataResult>(
+            //    path: GetAbsolutePath(FolderStructure.DatasetRelativePath),
+            //    hasHeader: true,
+            //    separatorChar: ',');
 
-            // Detect temporary changes (spikes) in the pattern.
-            ITransformer trainedSpikeModelRF_10 = DetectSpike(size, dataView, nameof(WeatherDataResult.RF_10));
-            ITransformer trainedSpikeModelPP_10 = DetectSpike(size, dataView, nameof(WeatherDataResult.PP_10));
+            //// Detect temporary changes (spikes) in the pattern.
+            //ITransformer trainedSpikeModelRF_10 = DetectSpike(size, dataView, nameof(WeatherDataResult.RF_10));
+            //ITransformer trainedSpikeModelPP_10 = DetectSpike(size, dataView, nameof(WeatherDataResult.PP_10));
 
-            // Detect persistent change in the pattern.
-            //when
-            ITransformer trainedChangePointModelRF_10 = DetectChangepoint(size, dataView, nameof(WeatherDataResult.RF_10));
-            ITransformer trainedChangePointModelPP_10 = DetectChangepoint(size, dataView, nameof(WeatherDataResult.PP_10));
+            //// Detect persistent change in the pattern.
+            ////when
+            //ITransformer trainedChangePointModelRF_10 = DetectChangepoint(size, dataView, nameof(WeatherDataResult.RF_10));
+            //ITransformer trainedChangePointModelPP_10 = DetectChangepoint(size, dataView, nameof(WeatherDataResult.PP_10));
 
-            SaveModel(mlContext, trainedSpikeModelRF_10, FolderStructure.SpikeModelPath1, dataView);
-            SaveModel(mlContext, trainedSpikeModelPP_10, FolderStructure.SpikeModelPath2, dataView);
+            //SaveModel(mlContext, trainedSpikeModelRF_10, FolderStructure.SpikeModelPath1, dataView);
+            //SaveModel(mlContext, trainedSpikeModelPP_10, FolderStructure.SpikeModelPath2, dataView);
 
-            SaveModel(mlContext, trainedChangePointModelRF_10, FolderStructure.ChangePointModelPath1, dataView);
-            SaveModel(mlContext, trainedSpikeModelPP_10, FolderStructure.ChangePointModelPath2, dataView);
+            //SaveModel(mlContext, trainedChangePointModelRF_10, FolderStructure.ChangePointModelPath1, dataView);
+            //SaveModel(mlContext, trainedSpikeModelPP_10, FolderStructure.ChangePointModelPath2, dataView);
 
         }
 

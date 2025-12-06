@@ -28,23 +28,16 @@ namespace UploadStreamToQuestDB.Infrastructure.Services {
         /// </summary>
         /// <param name="file">The CSV file containing weather data.</param>
         /// <param name="sessionId">The session ID for the name of the table.</param>
-        public void Execute(CsvFile<WeatherGermany> file, string sessionId) {
+        public void Execute(string filePath, string sessionId) {
             using var sender = Sender.New($"http::addr={this.address}:{this.port};{this.settings}");
             sender.Transaction(sessionId);
             try {
-                foreach (var p in file.Records) {
-                    var parsedDate = DateTimeUtility.yyyyMMddHHmmToDate(p.MessDatum);
+                var parsedDate = DateTimeUtility.yyyyMMddHHmmToDate(DateTime.Now);
 
-                    sender
-                     .Symbol("stationId", p.StationId.ToString())
-                     .Column("QN", p.QN)
-                     .Column("PP_10", p.PP10)
-                     .Column("TT_10", p.TT10)
-                     .Column("TM5_10", p.TMS10)
-                     .Column("RF_10", p.RF10)
-                     .Column("TD_10", p.TD10)
-                     .At(parsedDate);
-                }
+                sender
+                 .Column("SessionId", sessionId)
+                 .Column("FilePath", filePath)
+                 .At(parsedDate);
 
                 sender.Commit();
             } catch (Exception) {
