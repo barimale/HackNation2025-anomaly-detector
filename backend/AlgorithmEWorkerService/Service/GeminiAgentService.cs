@@ -17,12 +17,11 @@ namespace Algorithm.E.WorkerService.Service {
             var convertedFile = ImageConverter.LoadBmpAsFloatArray(input.First().FilePath); // lub surowy plik
             var prompt = "Poszukaj anomalii w poniższych danych:\n" + convertedFile
                 + "\n jeśli znajdziesz anomalię to zwróć 1 w przeciwnym razie zwróć 0. "
-                + "Zwróć tylko jedną liczbę oraz współrzędne prostokąta w którym znajduje się anomalia"
-                + "w formacie json";
+                + "Zwróć tylko jedną liczbę";
             var googleAI = new GoogleAI(apiKey: apiKey);
             var model = googleAI.GenerativeModel(model: modelName);
             var response = await model.GenerateContent(prompt);
-            var result = long.Parse(response.Text)// WIP obsluzyc jsona
+            var result = long.Parse(response.Text);// WIP obsluzyc jsona
 
             return result == 1;
         }

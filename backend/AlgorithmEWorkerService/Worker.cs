@@ -68,34 +68,12 @@ namespace Algorithm.E.WorkerService {
         }
 
         private async Task<bool> ProcessData(string sessionId) {
-            var allItems = await new DataExtractor()
-                                        .GetCount(sessionId);
+            var dataModel = await new DataExtractor()
+        .GetData(sessionId, 0, 1);
 
-            var totalItems = allItems;
-            int totalPages = (int)Math.Ceiling(totalItems / (double)Constants.PageSize);
+            var wynik = await geminiAgentService.FindAnomalies(dataModel);
 
-            var detections = new List<bool>();
-            if(totalItems <= Constants.PageSize) {
-                var dataModel = await new DataExtractor()
-                    .GetData(sessionId, 0, (int)totalItems);
-
-                var wynik = await geminiAgentService.FindAnomalies(dataModel);
-
-                return wynik;
-            }
-            for (int pageIndex = 0; pageIndex < totalPages; pageIndex++) {
-                int skip = (pageIndex - 1) * Constants.PageSize;
-                var dataModel = await new DataExtractor()
-                    .GetData(sessionId, skip, Constants.PageSize);
-
-                var wynik = await geminiAgentService.FindAnomalies(dataModel);
-                detections.Add(wynik);
-                var isAnomalyPreDetected = detections.Any(x => x == true);
-                if (isAnomalyPreDetected) return true;
-            }
-            var isAnomalyDetected = detections.Any(x => x == true);
-
-            return isAnomalyDetected;
+            return wynik;
         }
     }
 }
