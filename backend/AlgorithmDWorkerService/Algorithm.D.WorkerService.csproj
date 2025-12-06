@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-AlgorithmWorkerService-614519c0-77a7-4fac-b4df-c944abb3b0bb</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Model\**" />
+    <Content Remove="Model\**" />
+    <EmbeddedResource Remove="Model\**" />
+    <None Remove="Model\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
+    <PackageReference Include="Mscc.GenerativeAI" Version="2.9.3" />
+    <PackageReference Include="Questdb.Net" Version="1.3.1" />
+    <PackageReference Include="RabbitMQ.Client" Version="7.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Algorithm.Common\Algorithms.Common.csproj" />
+    <ProjectReference Include="..\Christmas.Secret.Gifter.Database.SQLite\MSSql.Infrastructure.csproj" />
+    <ProjectReference Include="..\Christmas.Secret.Gifter.Domain\MSSql.Domain.csproj" />
+    <ProjectReference Include="..\Common.RabbitMQ\Common.RabbitMQ.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,31 @@
+# project specific
+xxl.*
+
+# Visual Studio
+# User-specific files
+*.suo
+*.user
+packages/
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# .NET Core
+artifacts/
+
+# Visual Studio profiler
+*.psess
+*.vspx
+
+# NuGet Packages
+*.nupkg
+
+# Node.js Tools for Visual Studio
+node_modules/
+
+*.snk
+/UploadStreamToQuestDB.Api/logs
+/.vs/UploadStream/CopilotIndices/17.12.38.29086
+/.vs/UploadStream/FileContentIndex

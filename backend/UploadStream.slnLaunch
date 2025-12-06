@@ -1,0 +1,37 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "UploadStreamToQuestDB.Api\\UploadStreamToQuestDB.API.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "AlgorithmWorkerService\\Algorithm.A.WorkerService.csproj",
+        "Action": "Start",
+        "DebugTarget": "AlgorithmWorkerService"
+      },
+      {
+        "Path": "AlgorithmBWorkerService\\Algorithm.B.WorkerService.csproj",
+        "Action": "Start",
+        "DebugTarget": "AlgorithmWorkerService"
+      },
+      {
+        "Path": "AlgorithmCWorkerService\\Algorithm.C.WorkerService.csproj",
+        "Action": "Start",
+        "DebugTarget": "AlgorithmWorkerService"
+      },
+      {
+        "Path": "AlgorithmDWorkerService\\Algorithm.D.WorkerService.csproj",
+        "Action": "Start",
+        "DebugTarget": "AlgorithmWorkerService"
+      },
+      {
+        "Path": "AlgorithmEWorkerService\\Algorithm.E.WorkerService.csproj",
+        "Action": "Start",
+        "DebugTarget": "AlgorithmWorkerService"
+      }
+    ]
+  }
+]

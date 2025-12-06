@@ -1,0 +1,2 @@
+STATIONS_ID;MESS_DATUM;QN;PP_10;TT_10;TM5_10;RF_10;TD_10
+          0;  0;  0;  0;  0;  0;   0
