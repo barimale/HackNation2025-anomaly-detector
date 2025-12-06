@@ -6,9 +6,9 @@ using MSSql.Infrastructure.Repositories.Abstractions;
 using RabbitMQ.Client.Events;
 using System.Text.Json;
 
-namespace Algorithm.B.WorkerService {
+namespace Algorithm.A.WorkerService {
     public class Worker : BackgroundService {
-        public const string AGENT_NAME = Constants.AGENT_NAME_B;
+        public const string AGENT_NAME = Constants.AGENT_NAME_A;
 
         private readonly ILogger<Worker> _logger;
         private readonly IServiceScopeFactory _scopeFactory;
@@ -56,7 +56,7 @@ namespace Algorithm.B.WorkerService {
                 }
             };
 
-            await _queueConsumerService.StartAsync(bo, RabbitMQConfiguration.SolutionBRoute,cancellationToken);
+            await _queueConsumerService.StartAsync(bo, RabbitMQConfiguration.SolutionARoute,cancellationToken);
         }
 
         public override Task StopAsync(CancellationToken cancellationToken) {

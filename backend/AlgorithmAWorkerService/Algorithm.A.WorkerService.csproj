@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Worker">
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -17,7 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Algorithm.Common\Algorithms.Common.csproj" />
     <ProjectReference Include="..\Christmas.Secret.Gifter.Database.SQLite\MSSql.Infrastructure.csproj" />
-    <ProjectReference Include="..\Common.Configuration\Configuration.Common.csproj" />
+    <ProjectReference Include="..\Christmas.Secret.Gifter.Domain\MSSql.Domain.csproj" />
     <ProjectReference Include="..\Common.RabbitMQ\Common.RabbitMQ.csproj" />
   </ItemGroup>
 </Project>

@@ -1,3 +1,4 @@
+using Algorithm.A.WorkerService.Service;
 using Common.RabbitMQ;
 using MSSql.Infrastructure;
 using Questdb.Net;
@@ -10,6 +11,7 @@ namespace Algorithm.A.WorkerService {
             builder.Services.AddRabbitMQServices();
             builder.Services.AddAlgorithmCommonServices();
             builder.Services.AddMSSQLServices();
+            builder.Services.AddScoped<IML, MLNetExecutorA>();
             builder.Services.AddScoped<IQuestDBClient>(opt => new QuestDBClient());
 
             var host = builder.Build();

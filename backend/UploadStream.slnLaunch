@@ -8,11 +8,6 @@
         "DebugTarget": "http"
       },
       {
-        "Path": "AlgorithmWorkerService\\Algorithm.A.WorkerService.csproj",
-        "Action": "Start",
-        "DebugTarget": "AlgorithmWorkerService"
-      },
-      {
         "Path": "AlgorithmBWorkerService\\Algorithm.B.WorkerService.csproj",
         "Action": "Start",
         "DebugTarget": "AlgorithmWorkerService"
@@ -29,6 +24,11 @@
       },
       {
         "Path": "AlgorithmEWorkerService\\Algorithm.E.WorkerService.csproj",
+        "Action": "Start",
+        "DebugTarget": "AlgorithmWorkerService"
+      },
+      {
+        "Path": "AlgorithmAWorkerService\\Algorithm.A.WorkerService.csproj",
         "Action": "Start",
         "DebugTarget": "AlgorithmWorkerService"
       }
