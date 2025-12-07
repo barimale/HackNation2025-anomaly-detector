@@ -1,10 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "R:\\Anomaly-Detector\\backend\\",
+  "WorkspaceRootPath": "R:\\HackNation2025-anomaly-detector\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{085E3B5A-34A8-4C9E-9531-8A2ECECAAB9D}|Common.UTs\\Common.UTs.csproj|r:\\anomaly-detector\\backend\\common.uts\\datacreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{085E3B5A-34A8-4C9E-9531-8A2ECECAAB9D}|Common.UTs\\Common.UTs.csproj|solutionrelative:common.uts\\datacreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2946E19-FA8A-3FEA-E41F-367A4B1883D2}|AlgorithmDWorkerService\\Algorithm.D.WorkerService.csproj|r:\\hacknation2025-anomaly-detector\\backend\\algorithmdworkerservice\\service\\geminiagentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2946E19-FA8A-3FEA-E41F-367A4B1883D2}|AlgorithmDWorkerService\\Algorithm.D.WorkerService.csproj|solutionrelative:algorithmdworkerservice\\service\\geminiagentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EA5885-A2E8-96A8-7187-A49B8113C302}|AlgorithmEWorkerService\\Algorithm.E.WorkerService.csproj|r:\\hacknation2025-anomaly-detector\\backend\\algorithmeworkerservice\\service\\geminiagentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EA5885-A2E8-96A8-7187-A49B8113C302}|AlgorithmEWorkerService\\Algorithm.E.WorkerService.csproj|solutionrelative:algorithmeworkerservice\\service\\geminiagentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EA5885-A2E8-96A8-7187-A49B8113C302}|AlgorithmEWorkerService\\Algorithm.E.WorkerService.csproj|r:\\hacknation2025-anomaly-detector\\backend\\algorithmeworkerservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EA5885-A2E8-96A8-7187-A49B8113C302}|AlgorithmEWorkerService\\Algorithm.E.WorkerService.csproj|solutionrelative:algorithmeworkerservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D9AFEC1-C7D8-42E9-99D6-535B5FF9779B}|UploadStreamToQuestDB.Application\\UploadStreamToQuestDB.Application.csproj|r:\\hacknation2025-anomaly-detector\\backend\\uploadstreamtoquestdb.application\\uploadpipeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D9AFEC1-C7D8-42E9-99D6-535B5FF9779B}|UploadStreamToQuestDB.Application\\UploadStreamToQuestDB.Application.csproj|solutionrelative:uploadstreamtoquestdb.application\\uploadpipeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C66E9E0-C690-4554-8592-B3B2589F7DA6}|Solution Items{3C66E9E0-C690-4554-8592-B3B2589F7DA6}|R:\\HackNation2025-anomaly-detector\\backend\\PODMAN.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{3C66E9E0-C690-4554-8592-B3B2589F7DA6}|Solution Items{3C66E9E0-C690-4554-8592-B3B2589F7DA6}|solutionrelative:PODMAN.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F477E99A-F129-4851-9682-6BC34951757B}|Common.Configuration\\Configuration.Common.csproj|r:\\hacknation2025-anomaly-detector\\backend\\common.configuration\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F477E99A-F129-4851-9682-6BC34951757B}|Common.Configuration\\Configuration.Common.csproj|solutionrelative:common.configuration\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2946E19-FA8A-3FEA-E41F-367A4B1883D2}|AlgorithmDWorkerService\\Algorithm.D.WorkerService.csproj|r:\\hacknation2025-anomaly-detector\\backend\\algorithmdworkerservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2946E19-FA8A-3FEA-E41F-367A4B1883D2}|AlgorithmDWorkerService\\Algorithm.D.WorkerService.csproj|solutionrelative:algorithmdworkerservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2946E19-FA8A-3FEA-E41F-367A4B1883D2}|AlgorithmDWorkerService\\Algorithm.D.WorkerService.csproj|r:\\hacknation2025-anomaly-detector\\backend\\algorithmdworkerservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2946E19-FA8A-3FEA-E41F-367A4B1883D2}|AlgorithmDWorkerService\\Algorithm.D.WorkerService.csproj|solutionrelative:algorithmdworkerservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EA5885-A2E8-96A8-7187-A49B8113C302}|AlgorithmEWorkerService\\Algorithm.E.WorkerService.csproj|r:\\hacknation2025-anomaly-detector\\backend\\algorithmeworkerservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{31EA5885-A2E8-96A8-7187-A49B8113C302}|AlgorithmEWorkerService\\Algorithm.E.WorkerService.csproj|solutionrelative:algorithmeworkerservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EA5885-A2E8-96A8-7187-A49B8113C302}|AlgorithmEWorkerService\\Algorithm.E.WorkerService.csproj|r:\\hacknation2025-anomaly-detector\\backend\\algorithmeworkerservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{31EA5885-A2E8-96A8-7187-A49B8113C302}|AlgorithmEWorkerService\\Algorithm.E.WorkerService.csproj|solutionrelative:algorithmeworkerservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +55,131 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DataCreator.cs",
-              "DocumentMoniker": "R:\\Anomaly-Detector\\backend\\Common.UTs\\DataCreator.cs",
-              "RelativeDocumentMoniker": "Common.UTs\\DataCreator.cs",
-              "ToolTip": "R:\\Anomaly-Detector\\backend\\Common.UTs\\DataCreator.cs",
-              "RelativeToolTip": "Common.UTs\\DataCreator.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Title": "GeminiAgentService.cs",
+              "DocumentMoniker": "R:\\HackNation2025-anomaly-detector\\backend\\AlgorithmDWorkerService\\Service\\GeminiAgentService.cs",
+              "RelativeDocumentMoniker": "AlgorithmDWorkerService\\Service\\GeminiAgentService.cs",
+              "ToolTip": "R:\\HackNation2025-anomaly-detector\\backend\\AlgorithmDWorkerService\\Service\\GeminiAgentService.cs",
+              "RelativeToolTip": "AlgorithmDWorkerService\\Service\\GeminiAgentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T18:43:41.932Z",
+              "WhenOpened": "2025-12-06T19:02:43.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GeminiAgentService.cs",
+              "DocumentMoniker": "R:\\HackNation2025-anomaly-detector\\backend\\AlgorithmEWorkerService\\Service\\GeminiAgentService.cs",
+              "RelativeDocumentMoniker": "AlgorithmEWorkerService\\Service\\GeminiAgentService.cs",
+              "ToolTip": "R:\\HackNation2025-anomaly-detector\\backend\\AlgorithmEWorkerService\\Service\\GeminiAgentService.cs",
+              "RelativeToolTip": "AlgorithmEWorkerService\\Service\\GeminiAgentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T19:02:33.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Worker.cs",
+              "DocumentMoniker": "R:\\HackNation2025-anomaly-detector\\backend\\AlgorithmEWorkerService\\Worker.cs",
+              "RelativeDocumentMoniker": "AlgorithmEWorkerService\\Worker.cs",
+              "ToolTip": "R:\\HackNation2025-anomaly-detector\\backend\\AlgorithmEWorkerService\\Worker.cs",
+              "RelativeToolTip": "AlgorithmEWorkerService\\Worker.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T19:02:24.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UploadPipeline.cs",
+              "DocumentMoniker": "R:\\HackNation2025-anomaly-detector\\backend\\UploadStreamToQuestDB.Application\\UploadPipeline.cs",
+              "RelativeDocumentMoniker": "UploadStreamToQuestDB.Application\\UploadPipeline.cs",
+              "ToolTip": "R:\\HackNation2025-anomaly-detector\\backend\\UploadStreamToQuestDB.Application\\UploadPipeline.cs",
+              "RelativeToolTip": "UploadStreamToQuestDB.Application\\UploadPipeline.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwDsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T18:58:23.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PODMAN.md",
+              "DocumentMoniker": "R:\\HackNation2025-anomaly-detector\\backend\\PODMAN.md",
+              "RelativeDocumentMoniker": "PODMAN.md",
+              "ToolTip": "R:\\HackNation2025-anomaly-detector\\backend\\PODMAN.md",
+              "RelativeToolTip": "PODMAN.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-06T18:46:46.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "R:\\HackNation2025-anomaly-detector\\backend\\Common.Configuration\\Constants.cs",
+              "RelativeDocumentMoniker": "Common.Configuration\\Constants.cs",
+              "ToolTip": "R:\\HackNation2025-anomaly-detector\\backend\\Common.Configuration\\Constants.cs",
+              "RelativeToolTip": "Common.Configuration\\Constants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T18:46:37.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "R:\\HackNation2025-anomaly-detector\\backend\\AlgorithmDWorkerService\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "AlgorithmDWorkerService\\appsettings.Development.json",
+              "ToolTip": "R:\\HackNation2025-anomaly-detector\\backend\\AlgorithmDWorkerService\\appsettings.Development.json",
+              "RelativeToolTip": "AlgorithmDWorkerService\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-06T18:46:29.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "R:\\HackNation2025-anomaly-detector\\backend\\AlgorithmDWorkerService\\appsettings.json",
+              "RelativeDocumentMoniker": "AlgorithmDWorkerService\\appsettings.json",
+              "ToolTip": "R:\\HackNation2025-anomaly-detector\\backend\\AlgorithmDWorkerService\\appsettings.json",
+              "RelativeToolTip": "AlgorithmDWorkerService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-06T18:46:25.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "R:\\HackNation2025-anomaly-detector\\backend\\AlgorithmEWorkerService\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "AlgorithmEWorkerService\\appsettings.Development.json",
+              "ToolTip": "R:\\HackNation2025-anomaly-detector\\backend\\AlgorithmEWorkerService\\appsettings.Development.json",
+              "RelativeToolTip": "AlgorithmEWorkerService\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-06T18:46:20.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "R:\\HackNation2025-anomaly-detector\\backend\\AlgorithmEWorkerService\\appsettings.json",
+              "RelativeDocumentMoniker": "AlgorithmEWorkerService\\appsettings.json",
+              "ToolTip": "R:\\HackNation2025-anomaly-detector\\backend\\AlgorithmEWorkerService\\appsettings.json",
+              "RelativeToolTip": "AlgorithmEWorkerService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-06T18:45:54.778Z",
               "EditorCaption": ""
             }
           ]

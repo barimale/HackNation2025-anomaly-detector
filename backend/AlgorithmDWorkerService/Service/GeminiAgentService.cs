@@ -12,12 +12,12 @@ namespace Algorithm.D.WorkerService.Service {
         }
 
         public async Task<bool> FindAnomalies(IEnumerable<RTGFileDetails> input) {
-            var file = File.ReadAllText(input.First().FilePath); // WIP lub ponizsza linia zamiast tej 
-            //var convertedFile = ImageConverter.LoadBmpAsFloatArray(input.First().FilePath);
-            var prompt = "Poszukaj anomalii w poniższych danych:\n" + file
+            //var file = File.ReadAllText(input.First().FilePath); // WIP lub ponizsza linia zamiast tej 
+            var convertedFile = ImageConverter.LoadBmpAsFloatArray(input.First().FilePath);
+            var prompt = "Poszukaj anomalii w poniższych danych:\n" + convertedFile
                 + "\n jeśli znajdziesz anomalię to zwróć 1 w przeciwnym razie zwróć 0. "
-                + "Zwróć tylko jedną liczbę oraz współrzędne prostokąta w którym znajduje się anomalia"
-                + "w formacie json";
+                + "Zwróć tylko jedną liczbę";
+
             var googleAI = new GoogleAI(apiKey: apiKey);
             var model = googleAI.GenerativeModel(model: modelName);
             var response = await model.GenerateContent(prompt);
