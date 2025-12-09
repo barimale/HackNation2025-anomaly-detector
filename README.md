@@ -20,7 +20,6 @@ Baza danych powinna zostać wypełniona danymi początkowymi.
 
 ## Opcjonalne funkcje aplikacyjne do wykonania
 Dodac anulowanie zadań po określonym czasie oczekiwania.
-Gemini chyba nie wspiera tego rozwiązania.
 ### Zamiana coin flipów na prawdziwe modele
 Zamienić coin flipy na prawdziwe modele.
 ### Anulowanie
