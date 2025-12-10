@@ -33,3 +33,5 @@ Wykonac osobna aplikacje w formie dashboarda
 do wyswietlania anomalii - przekazac w URL sessionId.
 
 https://github.com/dotnet/machinelearning/blob/main/docs/samples/Microsoft.ML.Samples/Dynamic/Trainers/AnomalyDetection/RandomizedPcaSample.cs
+
+https://github.com/dotnet/machinelearning/blob/main/docs/samples/Microsoft.ML.Samples/Dynamic/Trainers/AnomalyDetection/RandomizedPcaSample.cs
