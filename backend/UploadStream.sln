@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.A.WorkerService",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.B.WorkerService", "AlgorithmBWorkerService\Algorithm.B.WorkerService.csproj", "{DE056F11-C85B-3477-8FE4-6482FE6A380D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.UTs", "Common.UTs\Common.UTs.csproj", "{093FF34B-1C03-E347-E933-ADC5E6273D59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -223,6 +225,18 @@ Global
 		{DE056F11-C85B-3477-8FE4-6482FE6A380D}.Release|x64.Build.0 = Release|Any CPU
 		{DE056F11-C85B-3477-8FE4-6482FE6A380D}.Release|x86.ActiveCfg = Release|Any CPU
 		{DE056F11-C85B-3477-8FE4-6482FE6A380D}.Release|x86.Build.0 = Release|Any CPU
+		{093FF34B-1C03-E347-E933-ADC5E6273D59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{093FF34B-1C03-E347-E933-ADC5E6273D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{093FF34B-1C03-E347-E933-ADC5E6273D59}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{093FF34B-1C03-E347-E933-ADC5E6273D59}.Debug|x64.Build.0 = Debug|Any CPU
+		{093FF34B-1C03-E347-E933-ADC5E6273D59}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{093FF34B-1C03-E347-E933-ADC5E6273D59}.Debug|x86.Build.0 = Debug|Any CPU
+		{093FF34B-1C03-E347-E933-ADC5E6273D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{093FF34B-1C03-E347-E933-ADC5E6273D59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{093FF34B-1C03-E347-E933-ADC5E6273D59}.Release|x64.ActiveCfg = Release|Any CPU
+		{093FF34B-1C03-E347-E933-ADC5E6273D59}.Release|x64.Build.0 = Release|Any CPU
+		{093FF34B-1C03-E347-E933-ADC5E6273D59}.Release|x86.ActiveCfg = Release|Any CPU
+		{093FF34B-1C03-E347-E933-ADC5E6273D59}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
